@@ -1,0 +1,531 @@
+
+
+
+
+/* Añadir esto en tus estilos globales o en un archivo CSS que importes en _app.js o en el componente */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+}
+
+div {
+    
+    overflow-x: hidden; /* Para cada contenedor si es necesario */
+}
+
+/* Si estás usando styled-components o CSS modules */
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Cambia la orientación si es necesario */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* O cualquier altura adecuada */
+}
+
+
+
+.info-box:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2); /* Añade sombra para mayor profundidad */
+}
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sectionContainer:hover {
+    transform: translateY(-5px); /* Efecto 'hover' sutil */
+}
+
+/* styles/TrainingBanner.module.css */
+/* styles/TrainingBanner.module.css */
+/* styles/TrainingBanner.module.css */
+.training-banner {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+
+  .summarySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .order-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .product-image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .order-details {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .order-details p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .price-comparison {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .button-form {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-form:hover {
+    background-color: #ff1493;
+  }
+
+.banner-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    text-align: left;
+}
+
+.banner-content-promo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Fondo semi-transparente */
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.banner-content-promo h2 {
+    font-size: 1.5rem; /* Ajuste para el tamaño del texto */
+    margin-bottom: 20px;
+}
+
+.banner-content-promo button {
+    padding: 10px 20px;
+    background-color: #fa709a;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.banner-content h2 {
+    font-size: 1.5rem; /* Ajuste para el tamaño del texto */
+    margin-bottom: 20px;
+}
+
+.banner-content button {
+    padding: 10px 20px;
+    background-color: #fa709a;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.button-form {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #fa709a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e06391;
+    }
+}
+
+
+.promo-banner {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60px;
+}
+
+.time span {
+    font-size: 1.2rem;
+    margin-bottom: -3px;
+}
+
+.time small {
+    font-size: 0.5rem;
+}
+
+.specialOfferText {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+    
+}
+.priceSection {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: -12px;
+    overflow: hidden;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    margin-bottom: 2px;
+   
+    
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #ff6347;
+    font-size: 0.7rem;
+}
+
+.newPrice {
+    color: #fa709a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    overflow-x: hidden;
+    justify-content: space-around;
+    
+}
+
+.priceContainer small {
+    font-size: 0.75rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .priceSection {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .countdown {
+        gap: 2rem;
+    }
+}
+/* styles/ProductFeatures.module.css */
+
+.modal {
+    max-width: 90%; /* Ajusta al tamaño de la pantalla */
+    margin: auto; /* Centra el modal */
+    padding: 20px; /* Espacio interno */
+    overflow: auto; /* Permite desplazamiento si es necesario */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.modal-content {
+    width: 100%; /* Asegura que el modal ocupe todo el ancho del contenedor padre */
+    display: flex; /* Utiliza flexbox para un mejor control del layout */
+    flex-direction: column; /* Alinea los elementos internos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .modal-content img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio sin perder su proporción */
+  }
+
+
+.formulario {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.formulario label {
+    margin-bottom: 5px; /* Espacio debajo de cada etiqueta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Ancho máximo para una mejor legibilidad */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.formulario input, .formulario select, .formulario button {
+    padding: 10px; /* Espacio interno para inputs y botón */
+    margin-bottom: 10px; /* Espacio debajo de cada input y botón */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.buttonhidro {
+    font-size: 10px;
+    background-color: #fa709a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .modal {
+        padding: 10px; /* Menos espacio interno */
+    }
+
+    .formulario label {
+        font-size: 14px; /* Texto más pequeño */
+    }
+
+    .formulario input, .formulario select, .formulario button {
+        padding: 8px; /* Menos espacio interno */
+    }
+}
+
+
+.sectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas */
+    grid-template-rows: auto auto; /* Crea dos filas que se ajustan al contenido */
+    grid-gap: 20px; /* Espacio entre tarjetas tanto vertical como horizontal */
+    padding: 20px;
+    margin: 20px auto; /* Centrado y con espacio */
+    background-color: #fff; /* Fondo blanco para mayor claridad */
+    color: #333; /* Texto oscuro para contraste */
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(209, 24, 24, 0.1);
+}
+.featureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Elimina el cálculo del ancho ya que grid se encarga de ello */
+    margin-bottom: 0; /* El espaciado ya es manejado por grid-gap */
+}
+
+/* Asegúrate de eliminar el margen derecho en la última tarjeta de cada fila para mantener el layout uniforme */
+.featureCard:nth-child(4n) {
+    margin-right: 0;
+}
+
+.featureCard img {
+    margin-bottom: 10px;
+}
+
+.featureCard h3 {
+    font-size: 1rem;
+    color: #333;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.featureCard p {
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.featureCard:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+/* styles/Testimonials.module.css */
+
+.testimonialsSection {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.filledStar {
+    color: black;
+}
+
+.emptyStar {
+    color: lightgray;
+}
+
+.applyCouponButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.applyCouponButton:hover {
+    background-color: #45a049;
+}
